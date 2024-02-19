@@ -1,0 +1,286 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: lightblue;
+}
+
+.logo h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    color: yellow;
+    text-shadow: 2px 4px 5px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+nav {
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(white, skyblue);
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+
+
+}
+
+nav li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    text-shadow: 1px 2px 2px white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+
+
+
+
+}
+
+nav a:hover {
+    color: orange;
+    border-bottom: 2px solid white;
+    text-shadow: 1px 2px 1px black;
+}
+
+.menu-line {
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media all and (max-width:1000px) {
+    .logo h1 {
+        font-size: 35px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+    }
+
+    nav {
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 15px;
+
+
+    }
+
+}
+
+@media all and (max-width:800px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 20px;
+
+
+
+    }
+
+    ul {
+        text-align: center;
+        display: none;
+    }
+
+    .logo {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 25px;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+}
+
+@media all and (max-width:535px) {
+
+    .logo h1 {
+        font-size: 25px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 15px;
+    }
+}
+
+.box1{
+    height: 500px;
+    width: 350px;
+    border-radius: 20%;
+    
+
+}
+.img1{
+    height: 300px;
+    width: 350px;
+    border-radius: 20%;
+    animation-name: img1;
+    animation-duration: 4s;
+
+}
+@keyframes img1{
+    0%{
+        transform: scale(0.5);
+    }
+}
+
+.box2{
+    height: 400px;
+    width: 350px;
+  
+    border-radius: 20%;
+}
+.img2{
+    height: 300px;
+    width: 350px;
+    border-radius: 20%;
+    animation-name: img2;
+    animation-duration: 4s;
+
+
+}
+@keyframes img2{
+    50%{
+        transform: scale(0.8);
+    }
+}
+
+.box3{
+    height: 400px;
+    width: 350px;
+  
+    border-radius: 20%;
+    animation-name: effect;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+.img3{
+    height: 300px;
+    width: 350px;
+    border-radius: 20%;
+ 
+}
+@keyframes effect{
+    0%{
+        background: url(service-img4.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 350px;
+        border-radius: 20%;
+
+    }
+    25%{
+        background: url(service-img3.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 350px;
+        border-radius: 20%;
+
+    }
+    50%{
+        background: url(service-img4.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 350px;
+        border-radius: 20%;
+
+    }
+    100%{
+        background: url(service-img3.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 350px;
+        border-radius: 20%;
+
+    }
+
+}
+.box4{
+    height: 400px;
+    width: 350px;
+  
+    border-radius: 20%;
+    margin-left: 20px;
+
+}
+
+
+
+@media all and (max-width:380px) {
+
+    .logo h1 {
+        font-size: 20px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+        margin-top: 8px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 20px;
+    }
+}

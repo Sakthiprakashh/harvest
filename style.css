@@ -1,0 +1,281 @@
+* {
+    font-family: 'Times New Roman', Times, serif;    font-weight: 400;
+    font-style: normal;
+
+
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: url(harvest-img2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    color: yellow;
+    text-shadow: 2px 4px 5px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+nav {
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(skyblue,white);
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px;
+
+
+}
+
+nav li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+    text-shadow: 1px 2px 2px white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+   
+
+
+
+}
+
+nav a:hover {
+    color: orange;
+    border-bottom: 4px solid black;
+    text-shadow: 1px 2px 1px black;
+}
+
+.menu-line {
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+/* content */
+
+center{
+    margin-top: 50px;
+}
+center h1{
+
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px  2px 3px black;
+
+}
+center span{
+font-weight: 600;
+font-size: 50px;
+animation-name: vellai;
+animation-duration: 10s;
+animation-iteration-count:infinite;
+
+
+text-shadow: 1px  2px 3px black;
+}
+@keyframes vellai{
+    0%{
+        transform: scale(0.6);
+    }
+   15%{
+   color: yellow;
+   text-shadow: 5px 8px 10px black;
+   }
+   30%{
+    color: orange;
+    text-shadow: 5px 8px 10px black;
+   }
+   50%{
+    color: red;
+    text-shadow: 5px 8px 10px black;
+   }
+   70%{
+    color: blue;
+    text-shadow: 5px 8px 10px black;
+   }
+ 
+}
+center h2{
+    color: yellow;
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    text-shadow: 1px  5px 3px black;
+    animation-name: one;
+    animation-duration: 4s;
+    animation-delay: 1s;
+
+}
+@keyframes one{
+    0%{
+        transform: scale(0.5);
+        color: white;
+    }
+}
+center button{
+    margin-top: 150px;
+    margin-left: 200px;
+    background-color: whitesmoke;
+    border: 2px solid red;
+    font-size: 20px;
+    border-radius: 20px 90px 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 50px -20px  solid white;
+    cursor: pointer;
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes button{
+    0%{
+         box-shadow: 0 0 20px red ,0 0 50px red,0 0 100px red;
+    }
+    50%{
+        box-shadow: none;
+    }
+    100%{
+         box-shadow: 0 0 20px red ,0 0 50px red,0 0 100px red;
+    }
+}
+center button:hover{
+
+     box-shadow: 0 0 20px red ,0 0 50px red,0 0 100px red;
+     color: yellow;
+     text-shadow: 1px 1px 2px black;
+
+}
+
+
+
+
+@media all and (max-width:1000px) {
+    .logo h1 {
+        font-size: 35px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+    }
+
+    nav {
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 15px;
+
+
+    }
+
+}
+
+@media all and (max-width:800px) {
+    body {
+        background: url(harvest-img3.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 20px;
+
+
+
+    }
+
+    ul {
+        text-align: center;
+        display: none;
+    }
+
+    .logo {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 25px;
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+}
+
+@media all and (max-width:535px) {
+
+    .logo h1 {
+        font-size: 25px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+
+        
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 15px;
+    }
+}
+
+@media all and (max-width:380px) {
+
+    .logo h1 {
+        font-size: 20px;
+        text-transform: capitalize;
+        word-spacing: 8px;
+        margin-top: 8px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 20px;
+    }
+}
